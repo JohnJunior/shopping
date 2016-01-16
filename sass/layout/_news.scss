@@ -1,0 +1,22 @@
+.news {
+  background: url("../img/news-bg.png") top left #e4e6e6;
+  img {
+    width: 100%;
+  }
+}
+
+@include screen(0px, 767px) {
+  .news {
+    .section-header {
+      margin-top: 60px;
+    }
+  }
+}
+
+@include screen(410px, 767px) {
+  .news {
+    .col-xs-12 {
+      width: 50%;
+    }
+  }
+}

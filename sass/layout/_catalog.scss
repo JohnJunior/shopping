@@ -1,0 +1,68 @@
+.catalog {
+  background: #fff;
+
+  .container {
+    margin-top: 100px;
+  }
+
+  .row {
+    padding: 0 10px;
+  }
+
+}
+
+.col2 {
+  margin-top: 20px;
+
+  li {
+    float: left;
+  }
+}
+
+.panel-title {
+  a {
+    display: block;
+  }
+}
+
+.panel-default {
+  &>.panel-heading {
+    color: $btn-text-color;
+    background: $btn-color;
+    border: none;
+  }
+}
+
+.panel-body {
+  background: $btn-color;
+  
+  li {
+    a {
+      color: #ffde6c;
+      line-height: 1.75;
+    }
+  }
+}
+
+.panel-group {
+  .panel {
+    border: none;
+
+    & + .panel {
+      margin-top: 0;
+      border-top: 1px solid #fff;
+    }
+  }
+}
+
+@include screen(468px, 767px) {
+  .catalog {
+    .catalog-menu {
+      width: 40%;
+    }
+
+    .small-items {
+      width: 60%;
+    }
+  }
+}

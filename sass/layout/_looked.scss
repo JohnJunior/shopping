@@ -1,0 +1,21 @@
+.looked {
+  background: url("../img/news-bg.png") top left #e4e6e6;
+
+  .item-wrap {
+    margin-bottom: 30px;
+  }
+
+  .sm-item {
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+    float: left;
+  }
+}
+
+@include min-screen(768px){
+  .looked {
+    .sm-item {
+      width: calc(20% - 20px);
+    }
+  }
+}

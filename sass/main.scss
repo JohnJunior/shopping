@@ -1,0 +1,27 @@
+@import "base/variables";
+@import "utils/mixins";
+
+@import "layout/layout";
+@import "base/base";
+
+//index page
+@import "layout/header";
+@import "layout/footer";
+@import "layout/_hero";
+@import "layout/news";
+@import "layout/products";
+@import "layout/video";
+@import "layout/goal";
+@import "layout/partners";
+@import "layout/mail";
+
+
+//product info page
+@import "layout/product-info";
+@import "layout/looked";
+
+//article page
+@import "layout/article";
+
+//catalog page
+@import "layout/catalog";

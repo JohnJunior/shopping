@@ -1,0 +1,58 @@
+body {
+  font-family: $main-font;
+  font-size: 12px;
+  background: #fff;
+}
+
+.container {
+  max-width: 980px;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a:focus, a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+a.button {
+  display: block;
+  background: $btn-color;
+  box-shadow: 0 2px 0 $btn-shadow;
+  color: $btn-text-color;
+  font-size: 1.3333em;
+  text-shadow: 0 -1px 0 rgba(171, 133, 0, 0.75);
+  width: 165px;
+  height: 40px;
+  margin: 0 0 30px 0;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  
+  &:focus, &:hover {
+    color: #000;
+    opacity: 0.8;
+  }
+}
+
+.section-header {
+  color: $section-header-color;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+.more {
+  font-style: italic;
+  line-height: 1.5;
+  color: $link-more-color;
+  margin-bottom: 20px;
+  display: block;
+
+  &:focus, &:hover {
+    text-decoration: underline;
+  }
+}

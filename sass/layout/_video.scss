@@ -1,0 +1,54 @@
+.video {
+  background: url("../img/video-bg.png") top left #000;
+  background-size: cover;
+
+  .inner {
+    background: rgba(59, 163, 253, 0.5);
+  }
+  
+  .section-header {
+    color: $video-text-color;
+  }
+}
+
+.video-big, .video-wrapper {
+  video {
+    display: block;
+    width: 100%;
+    margin: 0 auto 15px;
+  }
+}
+
+.new-video, .popular-video {
+  margin-bottom: 30px;
+
+  .lvl2 {
+    font-size: 2em;
+    line-height: 2;
+    color: $video-text-color;
+
+  }
+
+  li {
+    a {
+      color: $nav-url-color;
+
+      &:focus, &:hover {
+        color: $nav-url-hover;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+@include screen(630px, 767px) {
+  .video-wrapper {
+    width: 50%;
+    float: left;
+  }
+}

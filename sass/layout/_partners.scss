@@ -1,0 +1,59 @@
+.partners {
+  background: url("../img/news-bg.png") top left #e4e6e6;
+
+  .item-header {
+    margin-bottom: 0;
+  }
+
+  .social {
+
+    a {
+      width: 20px;
+      height: 20px;
+      background: url("../img/social-icons-sm.png");
+      margin-right: 3px;
+    }
+
+    .i-vk {
+      background-position: 0 0;
+    }
+
+    .i-ok {
+      background-position: -22px 0;
+    }
+
+    .i-fb {
+      background-position: -45px 0;
+    }
+
+    .i-twitter {
+      background-position: -67px 0;
+    }
+  }
+}
+
+.position {
+  color: #2f2f2f;
+}
+
+a.map {
+  color: #2f2f2f;
+  display: block;
+  margin-bottom: 10px;
+
+  &:focus, &:hover {
+    color: $nav-url-hover;
+  }
+}
+
+@include screen(0px, 767px) {
+  .partners {
+    ul.row {
+      li {
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+}

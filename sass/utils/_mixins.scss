@@ -1,0 +1,28 @@
+//media querry: from min-width to max-width
+@mixin screen($min-width, $max-width) {
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+//media querry: from min-width
+@mixin min-screen($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+//media querry: to max-width
+@mixin max-screen($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+//placeholder
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}

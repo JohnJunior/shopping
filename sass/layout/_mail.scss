@@ -1,0 +1,46 @@
+.mail {
+  background: url("../img/news-bg.png") top left #e4e6e6;
+
+  form {
+    margin: 20px auto;
+
+    input {
+      width: 230px;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+  }
+
+  @include placeholder {
+    //font-size: 1.5em;
+    color: #afafaf;
+  }
+  
+  .more {
+    color: $section-header-color;
+  }
+}
+
+.bluebg {
+  background: rgba(59, 163, 253, 0.5);
+}
+
+.join {
+  display: inline-block;
+  background: $btn-color;
+  box-shadow: 0 2px 0 $btn-shadow;
+  color: $btn-text-color;
+  border: none;
+  font-size: 1.3333em;
+  text-shadow: 0 -1px 0 rgba(171, 133, 0, 0.75);
+  width: 230px;
+  height: 39px;
+  text-align: center;
+  padding: 10px 0;
+
+  &:focus, &:hover {
+    color: #000;
+    opacity: 0.8;
+  }
+}
