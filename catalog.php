@@ -1,85 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Internet shopping</title>
+<?php include "scripts/head.php"; ?>
 </head>
 <body>
     <div class="wrapper">
-        <header class="h-page">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-menu-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><span class="fa fa-home"></span></a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="mobile-menu-navbar-collapse-1">
-                        <form class="navbar-form navbar-left" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Поиск">
-                            </div>
-                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                        </form>
-                        <ul class="nav navbar-nav menu">
-                            <li><a href="index.html#news">Новости</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Рекомендую</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li><a href="product-detail.html">Кондиционер</a></li>
-                                    <li><a href="product-detail.html">Бальзам для век</a></li>
-                                    <li><a href="product-detail.html">Динамический увлажняющий крем</a></li>
-                                    <li><a href="product-detail.html">Лосьон для тела "Солярис"</a></li>
-                                    <li><a href="product-detail.html">Очищающее молочко для лица</a></li>
-                                    <li><a href="product-detail.html">Комплект пробников кремов</a></li>
-                                    <li><a href="product-detail.html">Грязевая маска для лица</a></li>
-                                    <li><a href="product-detail.html">Крем для рук и ногтей</a></li>
-                                    <li><a href="product-detail.html">Солярис для лица c витамином "А"</a></li>
-                                    <li><a href="product-detail.html">Ночной крем</a></li>
-                                    <li><a href="product-detail.html">Водные компрессы Мёртвого Моря</a></li>
-                                    <li><a href="product-detail.html">Квартет солей Мертвого моря</a></li>
-                                    <li><a href="product-detail.html">Шампунь против перхоти</a></li>
-                                    <li><a href="product-detail.html">Шампунь для повседневного пользования</a></li>
-                                    <li><a href="product-detail.html">Тонизирующий лосьон для тела</a></li>
-                                    <li><a href="product-detail.html">Зубная паста "Шинсин"</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="index.html#goal">Приглашаю</a></li>
-                            <li><a href="catalog.html">Каталог</a></li>
-                            <li><a href="index.html#partners">Контакты</a></li>
-                        </ul>
-
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
-        </header>
+<?php include "scripts/header.php";?>
 
         <main class="m-page">
             <section class="catalog">
@@ -109,20 +35,20 @@
                                     <div id="collapseOne" class="panel-collapse collapse in">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.html">Дезодорант женский "Фиона"</a></li>
-                                                <li><a href="product-detail.html">Дезодорант женский "Рут"</a></li>
-                                                <li><a href="product-detail.html">Дезодорант женский "Киви"</a></li>
-                                                <li><a href="product-detail.html">Дезодорант женский "Леди"</a></li>
-                                                <li><a href="product-detail.html">Мужской дезодорант "Лорд"</a></li>
-                                                <li><a href="product-detail.html">Женские духи "Леди"</a></li>
-                                                <li><a href="product-detail.html">Женские духи "Фиона"</a></li>
-                                                <li><a href="product-detail.html">Женские духи "Монел"</a></li>
-                                                <li><a href="product-detail.html">Женские духи "Киви"</a></li>
-                                                <li><a href="product-detail.html">Женские духи "Рут"</a></li>
-                                                <li><a href="product-detail.html">Женские духи "1954"</a></li>
-                                                <li><a href="product-detail.html">Мужской лосьон "Лорд"</a></li>
-                                                <li><a href="product-detail.html">Губная помада</a></li>
-                                                <li><a href="product-detail.html">Биологически активные добавки</a></li>
+                                                <li><a href="product-detail.php">Дезодорант женский "Фиона"</a></li>
+                                                <li><a href="product-detail.php">Дезодорант женский "Рут"</a></li>
+                                                <li><a href="product-detail.php">Дезодорант женский "Киви"</a></li>
+                                                <li><a href="product-detail.php">Дезодорант женский "Леди"</a></li>
+                                                <li><a href="product-detail.php">Мужской дезодорант "Лорд"</a></li>
+                                                <li><a href="product-detail.php">Женские духи "Леди"</a></li>
+                                                <li><a href="product-detail.php">Женские духи "Фиона"</a></li>
+                                                <li><a href="product-detail.php">Женские духи "Монел"</a></li>
+                                                <li><a href="product-detail.php">Женские духи "Киви"</a></li>
+                                                <li><a href="product-detail.php">Женские духи "Рут"</a></li>
+                                                <li><a href="product-detail.php">Женские духи "1954"</a></li>
+                                                <li><a href="product-detail.php">Мужской лосьон "Лорд"</a></li>
+                                                <li><a href="product-detail.php">Губная помада</a></li>
+                                                <li><a href="product-detail.php">Биологически активные добавки</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -136,14 +62,14 @@
                                     <div id="collapseTwo" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -157,14 +83,14 @@
                                     <div id="collapseThree" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -178,14 +104,14 @@
                                     <div id="collapseFour" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -199,14 +125,14 @@
                                     <div id="collapseFive" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.html">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -217,7 +143,7 @@
                         <div class="small-items col-xs-12 col-sm-8">
                             <div class="row">
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -226,7 +152,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -235,7 +161,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -244,7 +170,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -253,7 +179,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -262,7 +188,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -271,7 +197,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -280,7 +206,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -289,7 +215,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -298,7 +224,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -307,7 +233,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -316,7 +242,7 @@
                                     </div>
                                 </div><!--sm-item-->
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.html" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
+                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
                                     <p class="item-annotation">Шампунь ежедневного
                                         пользования</p>
                                     <div class="add-info clear">
@@ -366,22 +292,7 @@
             </section>
         </main>
 
-        <footer class="f-page">
-            <div class="container">
-                <div class="row">
-                    <p class="company col-xs-12 col-sm-4">Сайт независимого консультанта компании </p>
-                    <div class="social col-xs-12 col-sm-4">
-                        <div class="i-wrapper clearfix"><a href="#" class="i-youtube"></a>
-                            <a href="#" class="i-two-dots"></a>
-                            <a href="#" class="i-vk"></a>
-                            <a href="#" class="i-ok"></a>
-                            <a href="#" class="i-fb"></a>
-                            <a href="#" class="i-twitter"></a></div>
-                    </div>
-                    <p class="alex-truhniy col-xs-12 col-sm-4">Разработка сайта Alex Truhniy</p>
-                </div>
-            </div>
-        </footer>
+<?php include "scripts/footer.php"; ?>
     </div>
 </body>
 </html>
