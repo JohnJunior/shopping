@@ -89,7 +89,12 @@ foreach($recommended as $item){
                         <div class="small-items col-xs-12 col-sm-8">
                             <div class="row">
 <?php
+$k = 0;
 foreach($catalog_products as $item){
+    $k++;
+    if($k > 6){
+        break;
+    } else {
 ?>
                                 <div class="sm-item col-xs-6 col-sm-4 ">
                                     <a href="<?=$item[href];?>" class="img-url"><img src="<?=$item[img];?>" alt="product-name"></a>
@@ -100,6 +105,7 @@ foreach($catalog_products as $item){
                                     </div>
                                 </div><!--sm-item-->
 <?php
+    }
 }
 ?>
 
