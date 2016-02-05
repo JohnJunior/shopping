@@ -9,6 +9,10 @@
     width: calc(33.33% - 20px);
     margin: 0 10px 20px;
     float: left;
+
+    &:nth-child(2n+1){
+      clear: none;
+    }
   }
 }
 
@@ -16,6 +20,10 @@
   .looked {
     .sm-item {
       width: calc(20% - 20px);
+
+      &:nth-child(3n+1){
+        clear: none;
+      }
     }
   }
 }

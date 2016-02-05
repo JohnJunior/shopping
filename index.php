@@ -1,3 +1,4 @@
+<?php require "scripts/data.php";?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,18 +48,17 @@
                 <div class="container">
                     <h2 class="section-header">Новости</h2>
                     <ul class="row">
-                        <li class="col-xs-12 col-sm-6 col-md-3"><img src="img/news1.png" alt="article-img">
-                            <p>Доктор Нонна на телеканале "Домашний" в программе "Спросите Повара"</p>
-                            <a href="article.php" class="more">Подробнее <span class="fa fa-caret-right"></span></a></li>
-                        <li class="col-xs-12 col-sm-6 col-md-3"><img src="img/news2.png" alt="article-img">
-                            <p>Доктор Нонна на телеканале "Домашний" в программе "Спросите Повара"</p>
-                            <a href="article.php" class="more">Подробнее <span class="fa fa-caret-right"></span></a></li>
-                        <li class="col-xs-12 col-sm-6 col-md-3"><img src="img/news3.png" alt="article-img">
-                            <p>Доктор Нонна на телеканале "Домашний" в программе "Спросите Повара"</p>
-                            <a href="article.php" class="more">Подробнее <span class="fa fa-caret-right"></span></a></li>
-                        <li class="col-xs-12 col-sm-6 col-md-3"><img src="img/news4.png" alt="article-img">
-                            <p>Доктор Нонна на телеканале "Домашний" в программе "Спросите Повара"</p>
-                            <a href="article.php" class="more">Подробнее <span class="fa fa-caret-right"></span></a></li>
+<?php
+foreach($news_preview as &$item){
+?>
+                        <li class="col-xs-12 col-sm-6 col-md-3">
+                            <img src="<?=$item[img];?>" alt="article-img">
+                            <p><?=$item[preview]; ?></p>
+                            <a href="<?=$item[href]; ?>" class="more">Подробнее <span class="fa fa-caret-right"></span></a>
+                        </li>
+<?php
+}
+?>
                     </ul>
                 </div>
             </section>
@@ -67,11 +67,13 @@
                 <div class="container">
                     <h2 class="section-header">Я рекомендую</h2>
                     <ul class="recommended">
-                        <li><a href="#">Соли и грязи</a></li>
-                        <li><a href="#">Кремы и лосьены</a></li>
-                        <li><a href="#">Парфюмерия</a></li>
-                        <li><a href="#">Витамины и бады</a></li>
-                        <li><a href="#">Чаи</a></li>
+<?php
+foreach($recommended as $item){
+?>
+                        <li><a href="<?=$item[href];?>"><?=$item[title];?></a></li>
+<?php
+}
+?>
                     </ul>
 
                     <div class="row">
@@ -86,66 +88,25 @@
                         </div>
                         <div class="small-items col-xs-12 col-sm-8">
                             <div class="row">
-                                <div class="sm-item col-xs-6 col-md-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
+<?php
+foreach($catalog_products as $item){
+?>
+                                <div class="sm-item col-xs-6 col-sm-4 ">
+                                    <a href="<?=$item[href];?>" class="img-url"><img src="<?=$item[img];?>" alt="product-name"></a>
+                                    <p class="item-annotation"><?=$item[name];?></p>
                                     <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
+                                        <div class="price"><?=$item[price];?> грн.</div>
                                         <a href="#" class="button buy">Купить</a>
                                     </div>
-                                </div>
-                                <div class="sm-item col-xs-6 col-md-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div>
-                                <div class="sm-item col-xs-6 col-md-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div>
-                                <div class="sm-item col-xs-6 col-md-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div>
-                                <div class="sm-item col-xs-6 col-md-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div>
-                                <div class="sm-item col-xs-6 col-md-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div>
+                                </div><!--sm-item-->
+<?php
+}
+?>
 
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </div><!--row-->
+                        </div><!--small-items-->
+                    </div><!--row-->
+                </div><!--container-->
             </section>
 
             <section class="video">
@@ -238,11 +199,14 @@
                 <div class="container">
                     <h2 class="section-header"></h2>
                     <ul class="row">
+<?php
+foreach($partners as $item){
+?>
                         <li class="col-xs-6 col-sm-3">
-                            <div class="img-wrap"><img src="img/partner-1.png" alt="partner" class="img-responsive"></div>
-                            <h3 class="item-header">Диорнева Татьяна</h3>
-                            <p class="item-annotation position">Директор</p>
-                            <a href="" class="map"><span class="fa fa-map-marker"></span> Мариуполь</a>
+                            <div class="img-wrap"><img src="<?=$item[photo];?>" alt="partner" class="img-responsive"></div>
+                            <h3 class="item-header"><?=$item[name];?></h3>
+                            <p class="item-annotation position"><?=$item[position];?></p>
+                            <a href="" class="map"><span class="fa fa-map-marker"></span> <?=$item[location];?></a>
                             <div class="social clearfix">
                                 <a href="#" class="i-vk"></a>
                                 <a href="#" class="i-ok"></a>
@@ -250,42 +214,9 @@
                                 <a href="#" class="i-twitter"></a>
                             </div>
                         </li>
-                        <li class="col-xs-6 col-sm-3">
-                            <div class="img-wrap"><img src="img/partner-2.png" alt="partner" class="img-responsive"></div>
-                            <h3 class="item-header">Проценко Мария</h3>
-                            <p class="item-annotation position">Директор</p>
-                            <a href="" class="map"><span class="fa fa-map-marker"></span> Донецк</a>
-                            <div class="social clearfix">
-                                <a href="#" class="i-vk"></a>
-                                <a href="#" class="i-ok"></a>
-                                <a href="#" class="i-fb"></a>
-                                <a href="#" class="i-twitter"></a>
-                            </div>
-                        </li>
-                       <li class="col-xs-6 col-sm-3">
-                            <div class="img-wrap"><img src="img/partner-1.png" alt="partner" class="img-responsive"></div>
-                            <h3 class="item-header">Диорнева Татьяна</h3>
-                            <p class="item-annotation position">Директор</p>
-                            <a href="" class="map"><span class="fa fa-map-marker"></span> Мариуполь</a>
-                            <div class="social clearfix">
-                                <a href="#" class="i-vk"></a>
-                                <a href="#" class="i-ok"></a>
-                                <a href="#" class="i-fb"></a>
-                                <a href="#" class="i-twitter"></a>
-                            </div>
-                        </li>
-                        <li class="col-xs-6 col-sm-3">
-                            <div class="img-wrap"><img src="img/partner-2.png" alt="partner" class="img-responsive"></div>
-                            <h3 class="item-header">Проценко Мария</h3>
-                            <p class="item-annotation position">Директор</p>
-                            <a href="" class="map"><span class="fa fa-map-marker"></span> Донецк</a>
-                            <div class="social clearfix">
-                                <a href="#" class="i-vk"></a>
-                                <a href="#" class="i-ok"></a>
-                                <a href="#" class="i-fb"></a>
-                                <a href="#" class="i-twitter"></a>
-                            </div>
-                        </li>
+<?php
+}
+?>
                     </ul>
                 </div>
             </section>

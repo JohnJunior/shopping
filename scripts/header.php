@@ -1,4 +1,4 @@
-<?php include "data.php";?>
+<?php require "data.php";?>
         <header class="h-page">
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container">

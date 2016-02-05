@@ -29,26 +29,19 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Соли и грязи</a>
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Парфюмерия</a>
                                         </h4>
                                     </div>
                                     <div id="collapseOne" class="panel-collapse collapse in">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.php">Дезодорант женский "Фиона"</a></li>
-                                                <li><a href="product-detail.php">Дезодорант женский "Рут"</a></li>
-                                                <li><a href="product-detail.php">Дезодорант женский "Киви"</a></li>
-                                                <li><a href="product-detail.php">Дезодорант женский "Леди"</a></li>
-                                                <li><a href="product-detail.php">Мужской дезодорант "Лорд"</a></li>
-                                                <li><a href="product-detail.php">Женские духи "Леди"</a></li>
-                                                <li><a href="product-detail.php">Женские духи "Фиона"</a></li>
-                                                <li><a href="product-detail.php">Женские духи "Монел"</a></li>
-                                                <li><a href="product-detail.php">Женские духи "Киви"</a></li>
-                                                <li><a href="product-detail.php">Женские духи "Рут"</a></li>
-                                                <li><a href="product-detail.php">Женские духи "1954"</a></li>
-                                                <li><a href="product-detail.php">Мужской лосьон "Лорд"</a></li>
-                                                <li><a href="product-detail.php">Губная помада</a></li>
-                                                <li><a href="product-detail.php">Биологически активные добавки</a></li>
+<?php
+foreach($parfums as $item) {
+    ?>
+                                                <li><a href="<?= $item[href]; ?>"><?= $item[name]; ?></a></li>
+<?php
+}
+?>
                                             </ul>
                                         </div>
                                     </div>
@@ -62,14 +55,13 @@
                                     <div id="collapseTwo" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+<?php
+foreach($other as $item) {
+?>
+                                                <li><a href="<?= $item[href]; ?>"><?= $item[name]; ?></a></li>
+<?php
+}
+?>
                                             </ul>
                                         </div>
                                     </div>
@@ -77,20 +69,19 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Парфюмерия</a>
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Соли и грязи</a>
                                         </h4>
                                     </div>
                                     <div id="collapseThree" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+<?php
+foreach($other as $item) {
+?>
+                                                <li><a href="<?= $item[href]; ?>"><?= $item[name]; ?></a></li>
+<?php
+}
+?>
                                             </ul>
                                         </div>
                                     </div>
@@ -104,14 +95,13 @@
                                     <div id="collapseFour" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+<?php
+foreach($other as $item) {
+?>
+                                                <li><a href="<?= $item[href]; ?>"><?= $item[name]; ?></a></li>
+<?php
+}
+?>
                                             </ul>
                                         </div>
                                     </div>
@@ -125,14 +115,13 @@
                                     <div id="collapseFive" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <ul>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
-                                                <li><a href="product-detail.php">Lorem ipsum dolor</a></li>
+<?php
+foreach($other as $item) {
+?>
+                                                <li><a href="<?= $item[href]; ?>"><?= $item[name]; ?></a></li>
+<?php
+}
+?>
                                             </ul>
                                         </div>
                                     </div>
@@ -142,115 +131,20 @@
                         </div><!--catalog-menu--->
                         <div class="small-items col-xs-12 col-sm-8">
                             <div class="row">
+<?php
+foreach($catalog_products as $item){
+?>
                                 <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
+                                    <a href="<?=$item[href];?>" class="img-url"><img src="<?=$item[img];?>" alt="product-name"></a>
+                                    <p class="item-annotation"><?=$item[name];?></p>
                                     <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
+                                        <div class="price"><?=$item[price];?> грн.</div>
                                         <a href="#" class="button buy">Купить</a>
                                     </div>
                                 </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-                                <div class="sm-item col-xs-6 col-sm-4 ">
-                                    <a href="product-detail.php" class="img-url"><img src="img/producr-small.png" alt="product-name"></a>
-                                    <p class="item-annotation">Шампунь ежедневного
-                                        пользования</p>
-                                    <div class="add-info clear">
-                                        <div class="price">280 грн.</div>
-                                        <a href="#" class="button buy">Купить</a>
-                                    </div>
-                                </div><!--sm-item-->
-
+<?php
+}
+?>
                             </div><!--row-->
                         </div><!--small-items-->
                     </div><!--row -->
